@@ -24,7 +24,7 @@ public class CompressTest {
         strings.add("E:/xpan/panFile/2022-06-22/IMAGE-0/09bf02ccde1b865e5cebe60e7286b51c.jpg");
         strings.add("E:/xpan/panFile/2022-06-22/IMAGE-0/e8a58f92ba667757a3a392a692ad645a.jpg");
         strings.add("E:/xpan/panFile/2022-06-22/UNSUPPORTED-0");
-        CompressUtils.zipFilesByZipStream(strings, 2, "E:/xpan/panFile/2022-06-22/COMPRESSS/aa.zip");
+        CompressUtils.compressZipFilesByZipStream(strings, 2, "E:/xpan/panFile/2022-06-22/COMPRESSS/aa.zip");
     }
 
     @Test
@@ -36,6 +36,6 @@ public class CompressTest {
     @Test
     public void zipFileTest() throws IOException {
         File file = new File("E:\\xpan\\panFile\\2022-06-22\\COMPRESSS\\COMPRESSS.zip");
-        CompressUtils.zipFileByZipFile("E:\\xpan\\panFile\\2022-06-22\\COMPRESSS\\aa.zip");
+        CompressUtils.extractZipFileByZipFile("E:\\xpan\\panFile\\2022-06-22\\COMPRESSS\\aa.zip");
     }
 }
